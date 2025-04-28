@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-0d1117 { background-color: #0d1117; }
+        .bg-0a0d14 { background-color: #0a0d14; }
+        .bg-111827 { background-color: #111827; }
+    </style>
+</head>
+<body class="min-h-screen bg-0d1117 text-white">
+    <header class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <h1 class="text-xl font-bold">BlackJack Pro</h1>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="/" class="text-white hover:text-gray-300">
+                Home
+            </a>
+            <a href="/play" class="text-white hover:text-gray-300">
+                Play Now
+            </a>
+            <a href="/rules" class="text-white hover:text-gray-300">
+                Rules
+            </a>
+            <a href="/leaderboard" class="text-white hover:text-gray-300">
+                Leaderboard
+            </a>
+        </nav>
+        <div class="flex items-center space-x-2">
+            <button class="inline-flex items-center border border-gray-700 text-white hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 text-center">
+                Login
+            </button>
+            <button class="bg-red-600 hover:bg-red-700 text-white font-medium rounded-md text-sm px-5 py-2.5 text-center">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="relative h-[500px] flex items-center">
+        <div
+            class="absolute inset-0 bg-black opacity-60 z-0"
+            style="background-image: url('/placeholder.svg?height=500&width=1200'); background-size: cover; background-position: center;"
+        ></div>
+        <div class="container mx-auto px-4 z-10 relative">
+            <div class="max-w-2xl">
+                <h2 class="text-5xl font-bold mb-4">
+                    Master the Art of
+                    <br />
+                    BlackJack
+                </h2>
+                <button class="bg-red-600 hover:bg-red-700 text-white font-medium rounded-md text-lg px-8 py-3 mt-6">Play Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-0d1117 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <h3 class="text-red-500 text-2xl font-bold">1M+</h3>
+                    <p class="text-gray-400">Active Players</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-red-500 text-2xl font-bold">$500K</h3>
+                    <p class="text-gray-400">Daily Winnings</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-red-500 text-2xl font-bold">24/7</h3>
+                    <p class="text-gray-400">Live Tables</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-red-500 text-2xl font-bold">99.9%</h3>
+                    <p class="text-gray-400">Payout Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-0a0d14">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Live Tables Available</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-111827 border-0 overflow-hidden rounded-md">
+                    <div class="h-48 relative">
+                        <img
+                            src="/placeholder.svg?height=200&width=400"
+                            alt="Classic BlackJack Table"
+                            class="object-cover w-full h-full"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Classic BlackJack</h3>
+                        <p class="text-gray-400 text-sm mb-2">Min bet: $100 • Max bet: $1000</p>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-medium rounded-md text-sm px-5 py-2.5 mt-2">Join Table</button>
+                    </div>
+                </div>
+
+                <div class="bg-111827 border-0 overflow-hidden rounded-md">
+                    <div class="h-48 relative">
+                        <img
+                            src="/placeholder.svg?height=200&width=400"
+                            alt="High Stakes Table"
+                            class="object-cover w-full h-full"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">High Stakes</h3>
+                        <p class="text-gray-400 text-sm mb-2">Min bet: $500 • Max bet: $10000</p>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-medium rounded-md text-sm px-5 py-2.5 mt-2">Join Table</button>
+                    </div>
+                </div>
+
+                <div class="bg-111827 border-0 overflow-hidden rounded-md">
+                    <div class="h-48 relative">
+                        <img src="/placeholder.svg?height=200&width=400" alt="Practice Table" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Practice Table</h3>
+                        <p class="text-gray-400 text-sm mb-2">Min bet: $0 • Max bet: $100</p>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-medium rounded-md text-sm px-5 py-2.5 mt-2">Join Table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-0d1117">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Top Players</h2>
+            <div class="bg-111827 border-0 p-6 rounded-md">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-12 h-12">
+                            <img
+                                src="/placeholder.svg?height=50&width=50"
+                                alt="Player Avatar"
+                                width="48"
+                                height="48"
+                                class="rounded-full"
+                            />
+                        </div>
+                        <div>
+                            <p class="font-medium">John K.</p>
+                            <p class="text-red-500">$750,000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-12 h-12">
+                            <img
+                                src="/placeholder.svg?height=50&width=50"
+                                alt="Player Avatar"
+                                width="48"
+                                height="48"
+                                class="rounded-full"
+                            />
+                        </div>
+                        <div>
+                            <p class="font-medium">Sarah M.</p>
+                            <p class="text-red-500">$540,000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-12 h-12">
+                            <img
+                                src="/placeholder.svg?height=50&width=50"
+                                alt="Player Avatar"
+                                width="48"
+                                height="48"
+                                class="rounded-full"
+                            />
+                        </div>
+                        <div>
+                            <p class="font-medium">Mike P.</p>
+                            <p class="text-red-500">$375,000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-12 h-12">
+                            <img
+                                src="/placeholder.svg?height=50&width=50"
+                                alt="Player Avatar"
+                                width="48"
+                                height="48"
+                                class="rounded-full"
+                            />
+                        </div>
+                        <div>
+                            <p class="font-medium">Lisa T.</p>
+                            <p class="text-red-500">$290,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-0a0d14 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">BlackJack Pro</h3>
+                    <p class="text-gray-400 text-sm">The ultimate online BlackJack experience.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>
+                            <a href="/" class="hover:text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/play" class="hover:text-white">
+                                Play Now
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/rules" class="hover:text-white">
+                                Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/leaderboard" class="hover:text-white">
+                                Leaderboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>
+                            <a href="/faq" class="hover:text-white">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="hover:text-white">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/terms" class="hover:text-white">
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/privacy" class="hover:text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <script type="module" src="/src/main.jsx"></script>
